@@ -183,13 +183,14 @@ td,th{
 }
 .sticky-footer{
 	padding:10px 20px;
+	display: none;
 	position: fixed;
 	bottom:0;
 	color:#FFF;
 	background: #31bc86;
 	width:100%;
 }
-.sticky-footer button{
+#place-order{
 	background: #EF5350;
 	color:white;
 	float: right;
@@ -197,12 +198,12 @@ td,th{
 	border:1px solid black;
 	color:white;
 }
-.sticky-footer button:hover{
+#place-order:hover{
 	background: white;
 	color:#EF5350;
 }
 @media screen (min-width:768px){
-	.sticky-footer button{
+	#place-order{
 		padding: 10px;
 	}
 }
