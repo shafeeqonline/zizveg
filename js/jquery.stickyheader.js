@@ -84,12 +84,14 @@ $(function(){
 						// Position sticky header based on viewport scrollTop
 						if($w.scrollTop() > $t.offset().top && $w.scrollTop() < $t.offset().top + $t.outerHeight() - allowance) {
 							// When top of viewport is in the table itself
+							$('#hideonscroll').show();
 							$stickyHead.add($stickyInsct).css({
 								opacity: 1,
 								top: $w.scrollTop() - $t.offset().top
 							});
 						} else {
 							// When top of viewport is above or below table
+							$('#hideonscroll').hide();
 							$stickyHead.add($stickyInsct).css({
 								opacity: 0,
 								top: 0

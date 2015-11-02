@@ -460,9 +460,22 @@ $(document).ready(function(){
 		calcTotal();
 	})
 
+	$('body').on('click', "#localsearchproducts" , function(){
+		$('#searchproducts').focus();
+		$(window).animate({scrollTop : 0})
+	})
+
+	$('body').on('click', "#loggout" , function(){
+		alert("jgsdf")
+	})
+
+	if($.cookie('authenticated') == "true" && ($.cookie('username'))){
+		$('#loggout').show();
+	}
+
 
 	if($('body').hasClass('order')){
-		if($.cookie('authenticated' != "true")){
+		if($.cookie('authenticated') != "true"){
 			window.location= "/index.html";
 		}
 		var localObject = JSON.parse(localStorage.getItem('productlist'));
@@ -562,7 +575,7 @@ $(document).ready(function(){
 	    alert( "error" );
 	  })
 	})
-
+	$('#hideonscroll').hide();
 	//Submit login form
 	$('form#login').on('submit', function(e){
 	  e.preventDefault();
@@ -589,9 +602,4 @@ $(document).ready(function(){
 	    alert( "error" );
 	  })
 	})
-	$('#placeorder #ordernow').on('click', function(){
-		console.log("In PHP get user details and send in mail")
-		console.log("Show success for 5 seconds and redirect to home page on success");
-	})
-
 })

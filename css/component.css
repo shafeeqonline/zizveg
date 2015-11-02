@@ -207,3 +207,33 @@ td,th{
 		padding: 10px;
 	}
 }
+.tab-content td:first-child{
+	width:30%;
+}
+.tab-content td:last-child{
+	width:69%;
+}
+.tab-content td input{
+	width:100%;
+}
+#searchproducts, #loggout{
+	float: right;
+}
+#loggout{
+	display: none;
+	background: #EF5350;
+    color: white;
+    outline: 0;
+    border: 1px solid black;
+    color: white;
+}
+#loggout:hover{
+	background: white;
+    color: #EF5350;
+    cursor: pointer;
+}
+@media all and (min-width: 768px){
+	.loginpage .component{
+		width:50%;
+	}
+}
