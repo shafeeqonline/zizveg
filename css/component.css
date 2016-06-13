@@ -105,7 +105,7 @@ tbody tr:nth-child(2n-1) {
     transition: all .125s ease-in-out;
 }
 tbody tr:hover {
-    background-color: rgba(129,208,177,.3);
+    background-color: rgba(49, 188, 134, .3);
 }
 
 /* For appearance */
@@ -131,6 +131,7 @@ tbody tr:hover {
 		box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
 		z-index: 100;
 		width: 100%; /* Force stretch */
+		top:-100px;
 	}
 	.sticky-wrap .sticky-intersect {
 		opacity: 1;
@@ -191,12 +192,13 @@ td,th{
 	width:100%;
 }
 #place-order{
-	background: #EF5350;
+	background: #31bc86;
 	color:white;
 	float: right;
 	outline: 0;
 	border:1px solid black;
 	color:white;
+	border-radius: 2px;
 }
 #place-order:hover{
 	background: white;
@@ -207,14 +209,17 @@ td,th{
 		padding: 10px;
 	}
 }
-.tab-content td:first-child{
+.loginpage td:first-child{
 	width:30%;
 }
-.tab-content td:last-child{
-	width:69%;
-}
-.tab-content td input{
+.loginpage td:last-child{
 	width:100%;
+}
+.loginpage td input{
+	width:100%;
+	border-radius: 4px;
+	padding:5px 10px;
+	text-align: center;
 }
 #searchproducts, #loggout{
 	float: right;
@@ -236,4 +241,35 @@ td,th{
 	.loginpage .component{
 		width:50%;
 	}
+}
+.lassilogo{
+	max-width: 100%;
+    height: 100px;
+    margin-bottom: -50px;
+}
+.loginerror{
+    color: red;
+	display: none;
+}
+input{
+	border: 1px solid gray;
+	border-radius: 3px;
+	padding: 2px 5px;
+}
+.loginpage{
+	padding-top: 15vh;
+}
+#finalplace{
+	width: 200px;
+    background: #31bc86;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    padding: 5px 10px;
+}
+.lassihead{
+	margin-top: 50px !important;
+	font-size: 24px !important;
 }

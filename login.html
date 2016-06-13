@@ -2,11 +2,11 @@
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>ZIZVEG</title>
-		<meta name="description" content="Order fruits and  vegetables online and get it delivered at your doorstep" />
-		<meta name="keywords" content="Fruits vegetables bangalore" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ZIZ Veggies</title>
+		<meta name="description" content="Order your Lassi Shop raw materials" />
+		<meta name="keywords" content="Ziz Veggies Order Bangalore" />
 		<meta name="author" content="Shafeeq Ur Rahman" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -19,71 +19,73 @@
 	<body class="loginpage">
 		<div class="container">
 			<header>
-				<h1>ZIZVEG <span>Order fruits and  vegetables online and get it delivered at your doorstep</span></h1>	
+				<img class="lassilogo" src="/zizlogo.jpg">
+				<h1 class="lassihead">ZIZ Veggies</h1>
 			</header>
 			<div class="component">
-        		<div>Register Here</div>
+			<div>Register Here</div>
 
-        		<div>
+			<div>
 
-			  <!-- Nav tabs -->
-			  <ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
-			    <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
-			  </ul>
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
+		<li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</a></li>
+	</ul>
 
-			  <!-- Tab panes -->
-			  <div class="tab-content">
-			    <div role="tabpanel" class="tab-pane fade in active" id="login">
-			    	<form id="login" name="reg" action="queryexec.php" method="post">
-						<table border="0" align="center" cellpadding="2" cellspacing="0">
-						  <tr>
-						    <td><div>User Name:</div></td>
-						    <td><input required type="text" name="username" /></td>
-						  </tr>
-						    <td><div>Password:</div></td>
-						    <td><input required type="password" name="password" /></td>
-						  </tr>
-						  <tr>
-						    <td><div align="right"></div></td>
-						    <td><input name="submit" type="submit" value="Submit" /></td>
-						  </tr>
-						</table>
-					</form>
-			    </div>
-			    <div role="tabpanel" class="tab-pane" id="register">
-			    	<form id="register" name="reg" action="queryexec.php" method="post">
-						<table border="0" align="center" cellpadding="2" cellspacing="0">
-						  <tr>
-						    <td><div>First Name:</div></td>
-						    <td><input required type="text" name="fname" /></td>
-						  </tr>
-						    <td><div>Address:</div></td>
-						    <td><input required type="text" name="address" /></td>
-						  </tr>
-						  <tr>
-						    <td><div>Contact No.:</div></td>
-						    <td><input required type="text" name="contact" /></td>
-						  </tr>
-						    <td><div>Username:</div></td>
-						    <td><input required type="text" name="username" /></td>
-						  </tr>
-						 <tr>
-						    <td><div>Password:</div></td>
-						    <td><input required type="password" name="password" /></td>
-						  </tr>
-						  <tr>
-						    <td><div></div></td>
-						    <td><input name="submit" type="submit" value="Submit" /></td>
-						  </tr>
-						</table>
-					</form>
-			    </div>
-			  </div>
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane fade in active" id="login">
+			<form id="login" name="reg" action="queryexec.php" method="post">
+			<table border="0" align="center" cellpadding="2" cellspacing="0">
+				<tr>
+					<td><div>User Name:</div></td>
+					<td><input required type="text" name="username" /></td>
+				</tr>
+					<td><div>Password:</div></td>
+					<td><input required type="password" name="password" /></td>
+				</tr>
+				<tr class="loginerror"><td>Wrong Credentials</td></tr>
+				<tr>
+					<td><div align="right"></div></td>
+					<td><input name="submit" type="submit" value="Submit" /></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+		<div role="tabpanel" class="tab-pane" id="register">
+			<form id="register" name="reg" action="queryexec.php" method="post">
+			<table border="0" align="center" cellpadding="2" cellspacing="0">
+				<tr>
+					<td><div>First Name:</div></td>
+					<td><input required type="text" name="fname" /></td>
+				</tr>
+					<td><div>Address:</div></td>
+					<td><input required type="text" name="address" /></td>
+				</tr>
+				<tr>
+					<td><div>Contact No.:</div></td>
+					<td><input required type="text" name="contact" /></td>
+				</tr>
+					<td><div>Username:</div></td>
+					<td><input required type="text" name="username" /></td>
+				</tr>
+			 <tr>
+					<td><div>Password:</div></td>
+					<td><input required type="password" name="password" /></td>
+				</tr>
+				<tr>
+					<td><div></div></td>
+					<td><input name="submit" type="submit" value="Submit" /></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+	</div>
 
-			</div>
+</div>
 
-			</div>
+</div>
 		</div><!-- /container -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.ba-throttle-debounce.min.js"></script>

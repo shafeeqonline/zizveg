@@ -76,7 +76,7 @@ $(function(){
 							// When top of wrapping parent is in view
 							$stickyHead.add($stickyInsct).css({
 								opacity: 0,
-								top: 0
+								top: 100
 							});
 						}
 					} else {
@@ -94,7 +94,7 @@ $(function(){
 							$('#hideonscroll').hide();
 							$stickyHead.add($stickyInsct).css({
 								opacity: 0,
-								top: 0
+								top: -100
 							});
 						}
 					}
