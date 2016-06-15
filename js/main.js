@@ -415,11 +415,11 @@ $(document).ready(function(){
 		calcTotal();
 	})
 
-	$('body').on('click', "#localsearchproducts" , function(){
+	$('body').click("#localsearchproducts" , function(){
 		$('#searchproducts').focus();
 	})
 
-	$('body').on('click', "#loggout" , function(){
+	$('body').click("#loggout" , function(){
 		alert("jgsdf")
 	})
 
@@ -448,7 +448,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$('#place-order').on('click', function(){
+	$('#place-order').click(function(){
 		var productlist = [];
 		$.each($('#shafeeq tr .product-quantity input'), function(){
 			if($(this).val() > 0){
@@ -471,7 +471,7 @@ $(document).ready(function(){
 	})
 
 	//Submit final order
-	$('#finalplace').on('click', function(e){
+	$('#finalplace').click(function(e){
 		e.preventDefault();
 		var productlist = [];
 		$.each($('#shafeeq tr .product-quantity input'), function(){
@@ -513,7 +513,7 @@ $(document).ready(function(){
 	})
 	$('#hideonscroll').hide();
 	//Submit login form
-	$('form#login').on('submit', function(e){
+	$('form#login').submit(function(e){
 		e.preventDefault();
 		var dataToSend = {};
 		$(this).find('input').each(function(){
@@ -542,7 +542,7 @@ $(document).ready(function(){
 	})
 
 	//Submit register form
-	$('form#register').on('submit', function(e){
+	$('form#register').submit(function(e){
 		e.preventDefault();
 		var dataToSend = {};
 		$(this).find('input').each(function(){
