@@ -6,11 +6,11 @@ $address=$_POST['address'];
 $contact=$_POST['contact'];
 $username=$_POST['username'];
 $password=$_POST['password'];
-$sql = "SELECT * FROM usersdb WHERE username = '$username'";
+$sql = "SELECT * FROM outlets WHERE username = '$username'";
 $result = mysql_query($sql) or die(mysql_error());
 $numrows = mysql_num_rows($result);
 if($numrows == 0){
-	mysql_query("INSERT INTO usersdb(fname, address, contact, username, password)VALUES('$fname', '$address', '$contact', '$username', '$password')");
+	mysql_query("INSERT INTO outlets(fname, address, contact, username, password)VALUES('$fname', '$address', '$contact', '$username', '$password')");
 	echo "done";
 }
 else{
