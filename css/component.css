@@ -240,3 +240,6 @@ td,th{
 #totalbill{
 	float: right;
 }
+#shafeeq tr:first-child{
+	margin-top: 31px;
+}
