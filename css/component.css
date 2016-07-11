@@ -237,3 +237,6 @@ td,th{
 		width:50%;
 	}
 }
+#totalbill{
+	float: right;
+}

@@ -68,9 +68,12 @@ function mainLoader(){
 		if(jQuery.isEmptyObject(localObject))
 		window.location = "/index.html";
 		templatingFunction(localObject);
+		var totalValue = 0;
 		$('#shafeeq tr .product-quantity input').each(function(i){
+			totalValue += localObject[i]['quantity'] * localObject[i]['cost'];
 			$(this).val(localObject[i]['quantity']).trigger('input');
 		})
+		$('#totalbill').val("Total bill: "+ totalValue);
 	}
 
 	$('#searchproducts').on("keyup", function() {

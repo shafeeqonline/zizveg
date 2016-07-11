@@ -22,7 +22,7 @@ $mailsend = '<html xmlns="http://www.w3.org/1999/xhtml">
                   <tr><td><h2 style="margin:0;">ZIZ Veggies</h2></td></tr>
                   <tr><td>Fraser town, Bangalore.</td></tr>
                   <tr><td>orders@zizveg.com</td></tr>
-                  <tr><td>www.zizveg.com/ck</td></tr>
+                  <tr><td>www.zizveg.com/</td></tr>
                 </table>
               </td>
             <td><img style="width:100px;float:right;" src="http://zizveg.com/zizlogo.jpg"></td></tr>
@@ -33,8 +33,8 @@ $mailsend = '<html xmlns="http://www.w3.org/1999/xhtml">
           <table  cellpadding="0" cellspacing="0" style="width:100%;text-align:center;">
           <tr style="background:gray">
           	<td style="width:50%;padding:10px;text-align:left;">Description</td>
-          	<td>QTY</td>
           	<td>Rate</td>
+          	<td>QTY</td>
           	<td>Amount</td>
           </tr>';
 for ($i = 0; $i < count($order); ++$i) {
@@ -60,12 +60,12 @@ $sql = "SELECT * FROM outlets WHERE username = '$username' LIMIT 1";
 $result = mysql_query($sql);
 $row = mysql_fetch_assoc($result);
 $to = "shafeeq.rahman01@gmail.com, sydzuhair@gmail.com";
-$subject = "Test mail from veggies"; 
+$subject = "Test mail from veggies";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-$mailsend .= "<br><br><br><br><br><br></table><table><tr><td>Name</td><td>Address</td><td>Contact</td></tr>";
+$mailsend .= "<br><br><br><br><br><br></table><table><tr><td>Delivery details</td></tr><tr><td>Name</td><td>Address</td><td>Contact</td></tr>";
 if(count($row)){
-	$mailsend .= "<tr><td>Delivery details</td></tr><tr><td>".$row['fname'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
+	$mailsend .= "<tr><td>".$row['fname'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
 	mail($to, $subject, $mailsend, $headers);
 	echo "success";
 }
