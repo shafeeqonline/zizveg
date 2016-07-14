@@ -73,7 +73,7 @@ function mainLoader(){
 			totalValue += localObject[i]['quantity'] * localObject[i]['cost'];
 			$(this).val(localObject[i]['quantity']).trigger('input');
 		})
-		$('#totalbill').val("Total bill: "+ totalValue);
+		$('#totalbill').text("Total bill: "+ totalValue);
 	}
 
 	$('#searchproducts').on("keyup", function() {
