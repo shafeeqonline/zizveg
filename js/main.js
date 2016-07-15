@@ -10,7 +10,7 @@ $.ajax({
 function mainLoader(){
 	var templatingFunction = function(localdata){
 		$.each(localdata, function(i, v){
-			var $mytemplate = $('<tr/>'), inputhtml = '<input type="number" placeholder="0">';
+			var $mytemplate = $('<tr/>'), inputhtml = '<input type="number" placeholder="0" min="0">';
 			$('<td/>').addClass('product-name').text(v.name).appendTo($mytemplate);
 			$('<td/>', {'data-cost' : v.cost}).addClass('product-cost').text(v.costText).appendTo($mytemplate);
 			$('<td/>').addClass('product-quantity').html(inputhtml).appendTo($mytemplate);
