@@ -59,7 +59,7 @@ $mailsend .= '
 $sql = "SELECT * FROM outlets WHERE username = '$username' LIMIT 1";
 $result = mysql_query($sql);
 $row = mysql_fetch_assoc($result);
-$to = "shafeeq.rahman01@gmail.com, sydzuhair@gmail.com";
+$to = "shafeeqline@gmail.com, zizveg@gmail.com";
 $subject = "Test mail from veggies";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
