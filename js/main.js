@@ -108,31 +108,39 @@ function mainLoader(){
 	//Submit register form
 	$('form#register').on('submit', function(e){
 		e.preventDefault();
-		var dataToSend = {};
+		var dataToSend = {}, flag = true;
 		$(this).find('input').each(function(){
+			if($(this).val() === ""){
+				flag = false;
+			}
 			dataToSend[$(this).attr('name')] = $(this).val();
 		})
-		$.ajax({
-			method: "POST",
-			url: "queryexec.php",
-			data: dataToSend
-		})
-		.done(function(data) {
-			if(data == "done"){
-				$.cookie('authenticated', 'true', { expires: 7, path: '/' });
-				$.cookie('username', $('input[name="username"]').val(), { expires: 7, path: '/' });
-				window.location = "/placeorder.html";
-			}
-			else if(data == "multipleentries"){
-				alert("Username already exists")
-			}
-			else{
-				alert("Sorry Please try again")
-			}
-		})
-		.fail(function() {
-			alert( "error" );
-		})
+		if(flag){
+			$.ajax({
+				method: "POST",
+				url: "queryexec.php",
+				data: dataToSend
+			})
+			.done(function(data) {
+				if(data == "done"){
+					$.cookie('authenticated', 'true', { expires: 7, path: '/' });
+					$.cookie('username', $('input[name="username"]').val(), { expires: 7, path: '/' });
+					window.location = "/placeorder.html";
+				}
+				else if(data == "multipleentries"){
+					alert("Username already exists")
+				}
+				else{
+					alert("Sorry Please try again")
+				}
+			})
+			.fail(function() {
+				alert( "error" );
+			})
+		}
+		else {
+			alert('Fill all fields');
+		}
 	})
 
 	//Submit final order
@@ -167,27 +175,35 @@ function mainLoader(){
 	//Submit login form
 	$('form#login').on('submit', function(e){
 		e.preventDefault();
-		var dataToSend = {};
+		var dataToSend = {}, flag = true;
 		$(this).find('input').each(function(){
+			if($(this).val() === ""){
+				flag = false;
+			}
 			dataToSend[$(this).attr('name')] = $(this).val();
 		});
-		$.ajax({
-			method: "POST",
-			url: "credentialscheck.php",
-			data: dataToSend
-		})
-		.done(function(data) {
-			if(data == "1"){
-				$.cookie('username', $('input[name="username"]').val(), { expires: 7, path: '/' });
-				$.cookie('authenticated', 'true', { expires: 7, path: '/' });
-				window.location = "/placeorder.html";
-			}
-			else{
-				alert("wrong credentials");
-			}
-		})
-		.fail(function() {
-			alert( "error" );
-		})
+		if(flag){
+			$.ajax({
+				method: "POST",
+				url: "credentialscheck.php",
+				data: dataToSend
+			})
+			.done(function(data) {
+				if(data == "1"){
+					$.cookie('username', $('input[name="username"]').val(), { expires: 7, path: '/' });
+					$.cookie('authenticated', 'true', { expires: 7, path: '/' });
+					window.location = "/placeorder.html";
+				}
+				else{
+					alert("wrong credentials");
+				}
+			})
+			.fail(function() {
+				alert( "error" );
+			})
+		}
+		else{
+			alert("Fill all fields");
+		}
 	})
 };
