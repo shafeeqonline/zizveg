@@ -59,13 +59,13 @@ $mailsend .= '
 $sql = "SELECT * FROM outlets WHERE username = '$username' LIMIT 1";
 $result = mysql_query($sql);
 $row = mysql_fetch_assoc($result);
-$to = "shafeeqline@gmail.com, zizveg@gmail.com";
-$subject = "Test mail from veggies";
+$subject = "Order recieved and confirmed by ZIZ Veggies";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $mailsend .= "<br><br><br><br><br><br></table><table><tr><td>Delivery details</td></tr><tr><td>Name</td><td>Address</td><td>Contact</td></tr>";
 if(count($row)){
-	$mailsend .= "<tr><td>".$row['fname'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
+  $to = $row['fname'] .", shafeeqline@gmail.com, zizveg@gmail.com";
+	$mailsend .= "<tr><td>".$row['username'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
 	mail($to, $subject, $mailsend, $headers);
 	echo "success";
 }
