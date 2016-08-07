@@ -247,3 +247,26 @@ header img{
 	height: 65px;
 	width:65px;
 }
+
+#finalplace {
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #d93434, #b82b6a);
+  background-image: -moz-linear-gradient(top, #d93434, #b82b6a);
+  background-image: -ms-linear-gradient(top, #d93434, #b82b6a);
+  background-image: -o-linear-gradient(top, #d93434, #b82b6a);
+  background-image: linear-gradient(to bottom, #d93434, #b82b6a);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#finalplace:hover {
+  background: #fff;
+	color: #d93434;
+  text-decoration: none;
+}
