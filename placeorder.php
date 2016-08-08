@@ -62,10 +62,10 @@ $row = mysql_fetch_assoc($result);
 $subject = "Order recieved and confirmed by ZIZ Veggies";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-$header = "From: zizveg@gmail.com\r\n"; 
+$header = "From: zizveg@gmail.com\r\n";
 $mailsend .= "<br><br><br><br><br><br></table><table><tr><td>Delivery details</td></tr><tr><td>Name</td><td>Address</td><td>Contact</td></tr>";
 if(count($row)){
-  $to = $row['fname'] .", shafeeqline@gmail.com, zizveg@gmail.com";
+  $to = $row['username'] .", shafeeqline@gmail.com, zizveg@gmail.com";
 	$mailsend .= "<tr><td>".$row['username'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
 	mail($to, $subject, $mailsend, $headers);
 	echo "success";
