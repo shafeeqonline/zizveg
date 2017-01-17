@@ -3,6 +3,7 @@ session_start();
 include('connection.php');
 $username = $_POST['myData']["username"];
 $order = $_POST['myData']["order"];
+$comment = $_POST['myData']["comment"];
 
 $mailsend = '<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -44,6 +45,9 @@ for ($i = 0; $i < count($order); ++$i) {
     $totalbill += (float)$order[$i]["quantity"]*(float)$order[$i]["cost"];
 }
 $mailsend .= "<tr><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr><td style='width:50%;padding:10px;'></td><td></td><td>Total</td><td>" . $totalbill . "</td></tr>";
+
+$mailsend .= "<tr><td style='width:50%;padding:10px;text-align:left;'>Comment: " . $comment . "</td></tr>";
+
 $mailsend .= '
   <tr><br><br></tr>
   <tr><td></td><td></td><td></td><td style="border-top: 1px dotted black;text-align: center;padding-top: 5px;" align="right">'.date("d/m/Y").'</td></tr></table></tr>
@@ -65,7 +69,8 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $header = "From: zizveg@gmail.com\r\n";
 $mailsend .= "<br><br><br><br><br><br></table><table><tr><td>Delivery details</td></tr><tr><td>Name</td><td>Address</td><td>Contact</td></tr>";
 if(count($row)){
-  $to = $row['username'] .", shafeeqline@gmail.com, zizveg@gmail.com";
+$to = $row['username'] .", shafeeqline@gmail.com, zizveg@gmail.com";
+
 	$mailsend .= "<tr><td>".$row['username'] . "</td><td>" . $row['address'] . "</td><td>" . $row['contact'] . "</td><tr></table></body></html>";
 	mail($to, $subject, $mailsend, $headers);
 	echo "success";

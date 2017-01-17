@@ -1,239 +1,224 @@
 {
 	"productslist": [{
-		"name": "Amala",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Arvi",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Banana KL",
-		"cost": 3,
-		"costText": "3/Pc"
-	}, {
-		"name": "Basil",
-		"cost": 28,
-		"costText": "28/Kg"
-	}, {
-		"name": "Beans ring",
-		"cost": 30,
-		"costText": "30/Kg"
-	}, {
-		"name": "Beans type",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Beans white",
-		"cost": 24,
-		"costText": "24/Kg"
-	}, {
-		"name": "beetroot",
-		"cost": 24,
-		"costText": "24/Kg"
-	}, {
-		"name": "Bitter gard",
-		"cost": 54,
-		"costText": "54/Kg"
-	}, {
-		"name": "Bottle gard",
-		"cost": 10,
-		"costText": "10/Pc"
-	}, {
-		"name": "Brinjol brown big",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Brinjol long",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Brinjol purple",
-		"cost": 56,
-		"costText": "56/Kg"
-	}, {
-		"name": "Brookli",
-		"cost": 140,
-		"costText": "140/Kg"
-	}, {
-		"name": "Cabbage red",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Cabbage white",
-		"cost": 30,
-		"costText": "30/Pc"
-	}, {
-		"name": "Cauliflower",
-		"cost": 20,
-		"costText": "20/Pc"
-	}, {
-		"name": "Capsicum",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Capsicum red",
-		"cost": 90,
-		"costText": "90/Kg"
-	}, {
-		"name": "Capsicum yellow",
-		"cost": 90,
-		"costText": "90/Kg"
-	}, {
-		"name": "Carrot local",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Carrot Ooty",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Corn baby",
-		"cost": 45,
-		"costText": "45/Kg"
-	}, {
-		"name": "Corn sweat",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Corn full/Maize",
-		"cost": 15,
-		"costText": "15/Kg"
-	}, {
-		"name": "Chilly",
-		"cost": 55,
-		"costText": "55/Kg"
-	}, {
-		"name": "Chilly bajji",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Chow Chow",
-		"cost": 35,
-		"costText": "35/Kg"
-	}, {
-		"name": "Cucumber",
-		"cost": 80,
-		"costText": "80/Kg"
-	}, {
-		"name": "Cucumber English",
-		"cost": 80,
-		"costText": "80/Kg"
-	}, {
-		"name": "Cucumber mang.",
-		"cost": 30,
-		"costText": "30/Kg"
-	}, {
-		"name": "Drum stick",
-		"cost": 10,
-		"costText": "10/Pc"
-	}, {
-		"name": "Garlic",
-		"cost": 140,
-		"costText": "140/Kg"
-	}, {
-		"name": "Garlic pealed",
-		"cost": 160,
-		"costText": "160/Kg"
-	}, {
-		"name": "Ginger 1st grd",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Ice berg",
-		"cost": 70,
-		"costText": "70/Kg"
-	}, {
-		"name": "Jugni green",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Jigni yellow",
-		"cost": 60,
-		"costText": "60/Kg"
-	}, {
-		"name": "Lady finger",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Lemon",
-		"cost": 3,
-		"costText": "3/Pc"
-	}, {
-		"name": "Mashroom",
-		"cost": 40,
-		"costText": "40/Pc"
-	}, {
-		"name": "Nookhel",
-		"cost": 65,
-		"costText": "65/Kg"
-	}, {
-		"name": "Onion",
-		"cost": 20,
-		"costText": "20/Kg"
-	}, {
-		"name": "Onion sambar",
-		"cost": 35,
-		"costText": "35/Kg"
-	}, {
-		"name": "Onion white",
-		"cost": 35,
-		"costText": "35/Kg"
-	}, {
-		"name": "Parvel",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Peas green ",
-		"cost": 95,
-		"costText": "95/Kg"
-	}, {
-		"name": "Potato",
-		"cost": 30,
-		"costText": "30/Kg"
-	}, {
-		"name": "Potato baby",
-		"cost": 30,
-		"costText": "30/Pkt"
-	}, {
-		"name": "Potato sweet",
-		"cost": 55,
-		"costText": "55/Kg"
-	}, {
-		"name": "Pumpkin red",
-		"cost": 15,
-		"costText": "15/Kg"
-	}, {
-		"name": "Pumpkin white",
-		"cost": 20,
-		"costText": "20/Kg"
-	}, {
-		"name": "Radish red",
-		"cost": 70,
-		"costText": "70/Kg"
-	}, {
-		"name": "Radish white",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Rich gard ",
-		"cost": 50,
-		"costText": "50/Kg"
-	}, {
-		"name": "Snake gard",
-		"cost": 35,
-		"costText": "35/Kg"
-	}, {
-		"name": "Tinda/Yam ",
-		"cost": 40,
-		"costText": "40/Kg"
-	}, {
-		"name": "Tomato ",
-		"cost": 20,
-		"costText": "20/Kg"
-	}, {
-		"name": "Turnip",
-		"cost": 80,
-		"costText": "80/Kg"
-	}]
+			"name": "Amala",
+			"cost": 60,
+			"costText": "60/Kg"
+		}, {
+			"name": "Arvi",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Banana KL",
+			"cost": 8,
+			"costText": "8/Pc"
+		}, {
+			"name": "Basil",
+			"cost": 190,
+			"costText": "190/Kg"
+		}, {
+			"name": "Beans",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "beetroot",
+			"cost": 24,
+			"costText": "24/Kg"
+		}, {
+			"name": "Bitter gard",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Bottle gard",
+			"cost": 15,
+			"costText": "15/Pc"
+		}, {
+			"name": "Brinjol purple",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Brinjol long",
+			"cost": 30,
+			"costText": "30/Kg"
+		},
+
+		{
+			"name": "Brookli",
+			"cost": 150,
+			"costText": "150/Kg"
+		}, {
+			"name": "Cabbage red",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Cabbage white",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Cauliflower",
+			"cost": 20,
+			"costText": "20/Kg"
+		}, {
+			"name": "Capsicum",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Capsicum red",
+			"cost": 70,
+			"costText": "70/Kg"
+		}, {
+			"name": "Capsicum yellow",
+			"cost": 70,
+			"costText": "70/Kg"
+		}, {
+			"name": "Carrot",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Carrot Delhi",
+			"cost": 60,
+			"costText": "60/Kg"
+		}, {
+			"name": "Corn baby",
+			"cost": 70,
+			"costText": "70/Pkt"
+		}, {
+			"name": "Corn sweet",
+			"cost": 30,
+			"costText": "30/Pkt"
+		}, {
+			"name": "Corn full/Maize",
+			"cost": 15,
+			"costText": "15/Pc"
+		}, {
+			"name": "Chilly",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Chilly bajji",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Chow Chow",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Cucumber",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Cucumber English",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Cucumber mangalore",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Drum stick",
+			"cost": 10,
+			"costText": "10/Pc"
+		}, {
+			"name": "Garlic",
+			"cost": 140,
+			"costText": "140/Kg"
+		}, {
+			"name": "Garlic pealed",
+			"cost": 180,
+			"costText": "180/Kg"
+		}, {
+			"name": "Ginger 1st grd",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Ice berg",
+			"cost": 70,
+			"costText": "70/Kg"
+		}, {
+			"name": "Jigni green",
+			"cost": 60,
+			"costText": "60/Kg"
+		}, {
+			"name": "Jigni yellow",
+			"cost": 60,
+			"costText": "60/Kg"
+		},
+
+		{
+			"name": "Lady finger",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Lemon",
+			"cost": 4,
+			"costText": "4/Pc"
+		}, {
+			"name": "Mashroom",
+			"cost": 35,
+			"costText": "35/Pc"
+		}, {
+			"name": "Nookhel",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Onion",
+			"cost": 20,
+			"costText": "20/Kg"
+		}, {
+			"name": "Onion sambar",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Onion white",
+			"cost": 50,
+			"costText": "50/Kg"
+		}, {
+			"name": "Peas green ",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Potato",
+			"cost": 20,
+			"costText": "20/Kg"
+		}, {
+			"name": "Potato baby",
+			"cost": 30,
+			"costText": "30/Pkt"
+		}, {
+			"name": "Pumpkin red",
+			"cost": 25,
+			"costText": "25/Kg"
+		}, {
+			"name": "Pumpkin white",
+			"cost": 30,
+			"costText": "30/Kg"
+		}, {
+			"name": "Radish red",
+			"cost": 70,
+			"costText": "70/Kg"
+		}, {
+			"name": "Radish white",
+			"cost": 28,
+			"costText": "28/Kg"
+		}, {
+			"name": "Rich gard ",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Snake gard",
+			"cost": 35,
+			"costText": "35/Kg"
+		}, {
+			"name": "Tinda/Yam ",
+			"cost": 40,
+			"costText": "40/Kg"
+		}, {
+			"name": "Tomato ",
+			"cost": 8,
+			"costText": "8/Kg"
+		}, {
+			"name": "Turnip",
+			"cost": 60,
+			"costText": "60/Kg"
+		}
+	]
 }

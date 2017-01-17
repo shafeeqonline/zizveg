@@ -65,6 +65,8 @@ function mainLoader(){
 			window.location= "/index.html";
 		}
 		var localObject = JSON.parse(localStorage.getItem('productlist'));
+    var yourcomment=localStorage.getItem('usercomment');
+
 		if(jQuery.isEmptyObject(localObject))
 		window.location = "/index.html";
 		templatingFunction(localObject);
@@ -74,6 +76,9 @@ function mainLoader(){
 			$(this).val(localObject[i]['quantity']).trigger('input');
 		})
 		$('#totalbill').text("Total bill: "+ totalValue);
+
+		$('#yourcomment').text("Your Comment: "+ yourcomment);
+
 	}
 
 	$('#searchproducts').on("keyup", function() {
@@ -96,6 +101,10 @@ function mainLoader(){
 				productlist.push(productObject);
 			}
 		})
+
+    var usercomment= $("#usercommentbox").val();
+		localStorage.setItem('usercomment',usercomment);
+
 		localStorage.removeItem('productlist');
 		localStorage.setItem('productlist', JSON.stringify(productlist));
 		if($.cookie('authenticated') == "true" && ($.cookie('username'))){
@@ -147,9 +156,11 @@ function mainLoader(){
 	$('#finalplace').on('click', function(e){
 		e.preventDefault();
 		var localObject = JSON.parse(localStorage.getItem('productlist')) , dataToSend = {};
+		var yourcomment=localStorage.getItem('usercomment');
 		if(jQuery.isEmptyObject(localObject) || !$.cookie('authenticated') || !$.cookie('username'))
 		window.location = "/index.html";
 		dataToSend.order = localObject;
+		dataToSend.comment = yourcomment;
 		dataToSend.username = $.cookie('username');
 		$.ajax({
 			method: "POST",
@@ -160,6 +171,7 @@ function mainLoader(){
 			if(data == "success"){
 				alert("Order sucessful");
 				localStorage.removeItem('productlist');
+				localStorage.removeItem('usercomment');
 				window.location = "/index.html";
 			}
 			else{
