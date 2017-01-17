@@ -11,6 +11,7 @@ function mainLoader(){
 	var templatingFunction = function(localdata){
 		$.each(localdata, function(i, v){
 			var $mytemplate = $('<tr/>'), inputhtml = '<input type="number" placeholder="0" min="0">';
+			$('<td/>').addClass('sl-no').text(i+1).appendTo($mytemplate);
 			$('<td/>').addClass('product-name').text(v.name).appendTo($mytemplate);
 			$('<td/>', {'data-cost' : v.cost}).addClass('product-cost').text(v.costText).appendTo($mytemplate);
 			$('<td/>').addClass('product-quantity').html(inputhtml).appendTo($mytemplate);
@@ -62,7 +63,7 @@ function mainLoader(){
 
 	if($('body').hasClass('order')){
 		if($.cookie('authenticated') != "true"){
-			window.location= "/index.html";
+			// window.location= "/index.html";
 		}
 		var localObject = JSON.parse(localStorage.getItem('productlist'));
     var yourcomment=localStorage.getItem('usercomment');
@@ -76,8 +77,8 @@ function mainLoader(){
 			$(this).val(localObject[i]['quantity']).trigger('input');
 		})
 		$('#totalbill').text("Total bill: "+ totalValue);
-
-		$('#yourcomment').text("Your Comment: "+ yourcomment);
+		if(yourcomment !== "")
+			$('#yourcomment').html("Your Comment: "+ yourcomment);
 
 	}
 
