@@ -10,7 +10,7 @@ $.ajax({
 function mainLoader(){
 	var templatingFunction = function(localdata){
 		$.each(localdata, function(i, v){
-			var $mytemplate = $('<tr/>'), inputhtml = '<input type="number" placeholder="0" min="0">';
+			var $mytemplate = $('<tr/>'), inputhtml = '<input type="number" placeholder="0" min="'+v.minorder+'">';
 			$('<td/>').addClass('sl-no').text(i+1).appendTo($mytemplate);
 			$('<td/>').addClass('product-name').text(v.name).appendTo($mytemplate);
 			$('<td/>', {'data-cost' : v.cost}).addClass('product-cost').text(v.costText).appendTo($mytemplate);
@@ -66,7 +66,7 @@ function mainLoader(){
 			// window.location= "/index.html";
 		}
 		var localObject = JSON.parse(localStorage.getItem('productlist'));
-    var yourcomment=localStorage.getItem('usercomment');
+		var yourcomment=localStorage.getItem('usercomment');
 
 		if(jQuery.isEmptyObject(localObject))
 		window.location = "/index.html";
@@ -78,7 +78,7 @@ function mainLoader(){
 		})
 		$('#totalbill').text("Total bill: "+ totalValue);
 		if(yourcomment !== "")
-			$('#yourcomment').html("Your Comment: "+ yourcomment);
+		$('#yourcomment').html("Your Comment: "+ yourcomment);
 
 	}
 
@@ -89,6 +89,13 @@ function mainLoader(){
 			$(this).closest('tr')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
 		});
 	});
+
+	$('#shafeeq').on("blur", ".product-quantity input", function(e){
+		var targetNode = $(e.target);
+		if(targetNode.val() < parseInt(targetNode.attr('min'))){
+			alert("Minimum order for "+ targetNode.parent().parent().find('.product-name').text()+ " is "+ targetNode.attr('min'));
+		}
+	})
 
 	$('#place-order').on('click', function(){
 		var productlist = [];
@@ -103,7 +110,7 @@ function mainLoader(){
 			}
 		})
 
-    var usercomment= $("#usercommentbox").val();
+		var usercomment= $("#usercommentbox").val();
 		localStorage.setItem('usercomment',usercomment);
 
 		localStorage.removeItem('productlist');

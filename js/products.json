@@ -2,11 +2,13 @@
 	"productslist": [{
 			"name": "Amala",
 			"cost": 60,
-			"costText": "60/Kg"
+			"costText": "60/Kg",
+			"minorder": ".5"
 		}, {
 			"name": "Arvi",
 			"cost": 50,
-			"costText": "50/Kg"
+			"costText": "50/Kg",
+			"minorder": "5"
 		}, {
 			"name": "Banana KL",
 			"cost": 8,
