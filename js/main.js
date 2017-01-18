@@ -141,7 +141,7 @@ function mainLoader(){
 			.done(function(data) {
 				if(data == "done"){
 					$.cookie('authenticated', 'true', { expires: 7, path: '/' });
-					$.cookie('username', $('input[name="username"]').eq(1).val(), { expires: 7, path: '/' });
+					$.cookie('username', $('input[name="username"]').eq(1).val(), { expires: 1000, path: '/' });
 					window.location = "/placeorder.html";
 				}
 				else if(data == "multipleentries"){
